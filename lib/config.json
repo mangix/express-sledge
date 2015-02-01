@@ -1,0 +1,15 @@
+{
+    "/": {
+        "controller": "/routes/index",
+        "method": "execute",
+        "result": {
+            "success": "/view/index.jade",
+            "error": "/view/error.jade"
+        },
+        "subs": [
+            {
+
+            }
+        ]
+    }
+}

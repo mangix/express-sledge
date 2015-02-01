@@ -1,0 +1,10 @@
+{
+    "/": {
+        "controller": "index",
+        "method": "execute",
+        "result": {
+            "success": "index.jade",
+            "error": "error.jade"
+        }
+    }
+}
