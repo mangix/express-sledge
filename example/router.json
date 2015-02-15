@@ -1,10 +1,26 @@
 {
-    "/": {
-        "controller": "index",
-        "method": "execute",
+
+    "/product": {
+        "subs": {
+            "/intro": {
+                "action": "product/intro",
+                "result": {
+                    "success": "product/intro.jade"
+                }
+            },
+            "/:productId": {
+                "action": "product/detail",
+                "result": {
+                    "success": "product/detail.jade"
+                }
+            }
+        }
+    },
+    "/user/:userId": {
+        "action": "users",
         "result": {
-            "success": "index.jade",
-            "error": "error.jade"
+            "success": "user.jade"
         }
     }
+
 }
