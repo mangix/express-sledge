@@ -5,11 +5,31 @@
         "result": {
             "success": "/view/index.jade",
             "error": "/view/error.jade"
-        },
-        "subs": [
-            {
-
+        }
+    },
+    "/product": {
+        "subs": {
+            "/intro": {
+                "controller": "/routes/product/intro",
+                "result": {
+                    "success": "/view/product/intro.jade",
+                    "error": "/view/product/error.jade"
+                }
+            },
+            "/:productId": {
+                "controller": "/view/product/detail",
+                "result": {
+                    "success": "/view/product/detail.jade"
+                }
             }
-        ]
+        }
+    },
+    "/user/:userId": {
+        "controller": "/routes/user",
+        "result": {
+            "success": "/view/user/user.jade",
+            "not_found": "/view/user/not_found.jade"
+        }
     }
+
 }
