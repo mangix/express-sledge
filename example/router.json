@@ -1,5 +1,11 @@
 {
-
+    "/": {
+        "action": "index",
+        "method": "execute",
+        "result": {
+            "success": "index.jade"
+        }
+    },
     "/product": {
         "subs": {
             "/intro": {

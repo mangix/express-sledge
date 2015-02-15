@@ -23,6 +23,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 sledge(app, require("./router.json"), path.join(__dirname, "routes"));
 
+
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
