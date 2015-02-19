@@ -26,7 +26,7 @@ A simple way to config URL , Controller , View of express based web app
  
 	```js
 	
-	
+	    var sledge = require("express-sledge");
 		sledge(app, require("./router.json"),path.join(__dirname, "routes"));
 	
 	```
@@ -51,7 +51,7 @@ A simple way to config URL , Controller , View of express based web app
 	
 	```
 
-- finish ! visit localhost:3000 , localhost:3000/product/intro ....
+- Finish ! visit localhost:3000
 
 For more details , run `./example/bin/www` .
 
@@ -62,10 +62,12 @@ For more details , run `./example/bin/www` .
 - sledge(urlPattern , config , baseControllerPath);
 
 	- `urlPattern` any pattern supported by express
+
 	- `config` Object , see [lib/config.json](./lib/config.json)
+
 	- `baseControllerPath` path of routers directory. `require("path").join(__dirname , "routes")`
 	
-	this will parse the config to express.Router and add function `result` to `express.Response` . You can use this function to choose which view to render.  Of course , you can still use express.Response.render or other functions.
+	This will parse the config to express.Router and add function `result` to `express.Response` . You can use this function to choose which view to render.  Of course , you can still use express.Response.render or other functions.
 
 
 	
