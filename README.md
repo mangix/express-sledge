@@ -12,7 +12,7 @@ A simple way to config URL , Controller , View of express based web app
 
 	{
     	"/": {
-        	"action": "/routes/index",
+        	"action": "index",
         	"method": "execute",
         	"result": {
             	"success": "/view/index.jade",
@@ -22,14 +22,14 @@ A simple way to config URL , Controller , View of express based web app
     	"/product": {
             "subs": {
                 "/intro": {
-                    "action": "/routes/product/intro",
+                    "action": "product/intro",
                     "result": {
                         "success": "/view/product/intro.jade",
                         "error": "/view/product/error.jade"
                     }
                 },
                 "/:productId": {
-                    "action": "/view/product/detail",
+                    "action": "product/detail",
                     "result": {
                         "success": "/view/product/detail.jade"
                     }
