@@ -18,7 +18,25 @@ A simple way to config URL , Controller , View of express based web app
             	"success": "/view/index.jade",
             	"error": "/view/error.jade"
         	}
-    	}
+    	},
+    	"/product": {
+            "subs": {
+                "/intro": {
+                    "action": "/routes/product/intro",
+                    "result": {
+                        "success": "/view/product/intro.jade",
+                        "error": "/view/product/error.jade"
+                    }
+                },
+                "/:productId": {
+                    "action": "/view/product/detail",
+                    "result": {
+                        "success": "/view/product/detail.jade"
+                    }
+                }
+            }
+        }
+    }
 
 ```
 
