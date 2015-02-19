@@ -21,10 +21,7 @@ describe("parser", function () {
 
         var config = {
             "pattern_with_out_sub": {
-                "action": "./single",
-                "result": {
-                    "success": "test.jade"
-                }
+                "action": "./single"
             }
         };
 
