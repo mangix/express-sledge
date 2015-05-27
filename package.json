@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/mangix/express-sledge",
   "dependencies": {
-    "express": "^4.11.2"
+    "express": "^4.11.2",
+    "winston": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^2.0.0",
