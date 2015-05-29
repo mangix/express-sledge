@@ -1,6 +1,6 @@
 {
   "name": "express-sledge",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a simple way to config url,controller,view of express based web app",
   "main": "index.js",
   "scripts": {
